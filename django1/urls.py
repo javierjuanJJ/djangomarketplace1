@@ -21,7 +21,7 @@ from core.views import index, contact
 from django1 import settings
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', include('core.urls')),
     path('items/', include('items.urls')),
     path('contact/', contact, name='contact'),
     path('admin/', admin.site.urls),
