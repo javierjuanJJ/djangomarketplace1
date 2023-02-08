@@ -12,7 +12,7 @@ class LoginForm(AuthenticationForm):
 
         ))
 
-    password1 = forms.CharField(
+    password = forms.CharField(
         widget=forms.PasswordInput(attrs={
             'placeholder': 'Your password',
             'class': 'w-full py-4 px-6 rounded-xl',
@@ -23,7 +23,7 @@ class LoginForm(AuthenticationForm):
 class SignupForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ('username','email','password1','password2')
+        fields = ('username','email', 'password', 'password2')
 
 
     username = forms.CharField(
