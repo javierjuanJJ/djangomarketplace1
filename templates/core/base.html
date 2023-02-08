@@ -18,6 +18,7 @@
 {% if request.user.is_authenticated %}
     <a href="#" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-cl hover:bg-teal-700">Inbox</a>
     <a href="#" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-cl hover:bg-gray-700">Dashboard</a>
+    <a href="{% url 'item:new' %}" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-cl hover:bg-teal-700">New item</a>
 
 {% else %}
     <a href="{% url 'core:signup' %}" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-cl hover:bg-teal-700">Sign up</a>
