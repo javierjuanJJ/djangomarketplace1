@@ -14,7 +14,7 @@ class LoginForm(AuthenticationForm):
 
     password1 = forms.CharField(
         widget=forms.PasswordInput(attrs={
-            'placeholder': 'Your username',
+            'placeholder': 'Your password',
             'class': 'w-full py-4 px-6 rounded-xl',
         }
 
